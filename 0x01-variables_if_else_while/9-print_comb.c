@@ -19,7 +19,7 @@ int mai(void)
 		}
 		
 		putchar(',');
-		putchar (' ');
+		putchar(' ');
 	}
 
 	putchar('\n');
