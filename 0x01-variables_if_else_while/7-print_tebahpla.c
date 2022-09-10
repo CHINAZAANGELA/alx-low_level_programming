@@ -2,25 +2,21 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success/correct)
+ * Return: Always 0 (Success)
  */
-int main(void)
+
+
+	int main(void)
 
 {
-char alphabet;
+	char alphabet;
 
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-{
-	if (alphabet == 'q')
-		continue;
+	for (alphabet = 122 ; alphabet >= 97; alphabet--)
 
-	else if (alphabet == 'e')
-		continue;
+	{
+		putchar(alphabet);
+	}
+	putchar('\n');
 
-	putchar (alphabet);
-}
-
-putchar ('\n');
-
-return (0);
+	return (0);
 }
