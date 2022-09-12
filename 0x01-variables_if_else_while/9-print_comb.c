@@ -1,23 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 0 to 9 with commas and spaces.
+ * main - Entry point
  *
- * Return: 0 (Success)
+ * Return: 0 Success
  */
 int mai(void)
-{
-	int i;
 
-	for (i = 48; i < 58; i++)
+{
+	int number;
+
+	for (number = 48; number <= 57; number++)
 	{
-		putchar(i);
-		if (i != 57)
+		putchar(number);
+
+		if (number == 57)
 		{
-			putchar(',');
-			putchar (' ');
+			break;
 		}
+		
+		putchar(',');
+		putchar (' ');
 	}
+
 	putchar('\n');
+
 	return (0);
+
 }
